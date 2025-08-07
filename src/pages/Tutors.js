@@ -1,11 +1,15 @@
 import tutors from "../data/tutors";
 import "./Tutors.css";
+import { useEffect } from "react";
 
 function Tutors() {
+  useEffect(() => {
+    document.title = "EduBridge | Tutors";
+  }, []);
   return (
     <div className="tutors-page">
       <h2>Meet Our Tutors</h2>
-      <div className="tutor-grid">
+      <div className="tutor-grid fade-in">
         {tutors.map((tutor) => (
           <div key={tutor.id} className="tutor-card">
             <img src={tutor.image} alt={tutor.name} />

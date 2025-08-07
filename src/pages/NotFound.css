@@ -1,0 +1,33 @@
+
+.not-found {
+  text-align: center;
+  padding: 5rem 1rem;
+  color: #3B2F2F;
+  background-color: #FFFDD0;
+  min-height: 90vh;
+}
+
+.not-found h1 {
+  font-size: 6rem;
+  margin-bottom: 1rem;
+  color: #D4AF37;
+}
+
+.not-found p {
+  font-size: 1.25rem;
+  margin-bottom: 2rem;
+}
+
+.back-home {
+  display: inline-block;
+  padding: 0.75rem 1.5rem;
+  background-color: #3B2F2F;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  transition: background-color 0.3s ease;
+}
+
+.back-home:hover {
+  background-color: #5a423c;
+}

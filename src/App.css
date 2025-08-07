@@ -36,3 +36,61 @@
     transform: rotate(360deg);
   }
 }
+
+.fade-in {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 0.8s ease-out forwards;
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Buttons */
+button,
+.btn {
+  transition: all 0.3s ease;
+  background-color: #D4AF37;
+  color: #fff;
+  border: none;
+  padding: 0.6rem 1.2rem;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover,
+.btn:hover {
+  background-color: #b5942f;
+  transform: translateY(-2px);
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Navbar links */
+.navbar a {
+  transition: color 0.3s ease;
+  color: #3B2F2F;
+  text-decoration: none;
+}
+
+.navbar a:hover {
+  color: #D4AF37;
+}
+
+/* Tutor cards */
+.tutor-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.tutor-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+

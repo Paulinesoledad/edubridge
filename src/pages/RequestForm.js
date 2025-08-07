@@ -1,7 +1,11 @@
 import React, { useState } from "react";
 import "./RequestForm.css";
+import { useEffect } from "react";
 
 const RequestForm = () => {
+  useEffect(() => {
+    document.title = "EduBridge | RequestForm";
+  }, []);
   const [submitted, setSubmitted] = useState(false);
   const [formData, setFormData] = useState({
     fullName: "",

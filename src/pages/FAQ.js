@@ -1,5 +1,6 @@
 import { useState } from "react";
 import "./FAQ.css";
+import { useEffect } from "react";
 
 const faqs = [
   {
@@ -21,6 +22,9 @@ const faqs = [
 ];
 
 function FAQ() {
+  useEffect(() => {
+    document.title = "EduBridge | FAQ";
+  }, []);
   const [activeIndex, setActiveIndex] = useState(null);
 
   const toggleFAQ = (index) => {
